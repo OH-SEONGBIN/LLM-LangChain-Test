@@ -1,0 +1,6 @@
+langchain>=0.2.0
+langchain-community>=0.0.19
+openai
+streamlit
+pandas
+python-dotenv
