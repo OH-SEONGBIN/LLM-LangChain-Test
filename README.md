@@ -46,3 +46,36 @@ streamlit run travel_assistant_app.py
 - langchain
 - openai
 - pandas
+
+
+---
+
+## 📊 재현 / 개선 요약
+
+- **Baseline** (few-shot 전):
+  - Pass **60%** (n=5)
+  - 지연 **p50 2.27s / p95 3.10s**
+  - 결과 파일: `metrics/agent_eval_2025-09-02_195006.csv`
+
+- **After** (System + Few-shot 보강 후):
+  - Pass **100%** (**+40pp**)
+  - 지연 **p50 2.12s (-6.6%) / p95 2.50s (-19.5%)**
+  - 결과 파일: `metrics/agent_eval_2025-09-02_200913.csv`
+
+> 보강 내용: System 프롬프트에 핵심 포인트(23kg/100ml/6개월 등) 강제 + 2-shot 예시 추가  
+> 동일 조건 재측정: `gpt-3.5-turbo`, `temperature=0.0`, QA 5건
+
+---
+
+## 🔁 재현 방법
+
+### 1) 환경 준비
+```bash
+python -m venv .venv
+# Windows
+.\.venv\Scripts\Activate.ps1
+# macOS/Linux
+source .venv/bin/activate
+
+python -m pip install -U pip
+python -m pip install -r requirements.txt
