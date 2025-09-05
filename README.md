@@ -53,11 +53,13 @@ streamlit run travel_assistant_app.py
 ## 📊 재현 / 개선 요약
 
 - **Baseline** (few-shot 전):
+  - <img width="507" height="55" alt="LLM-LangChain-Test_copy" src="https://github.com/user-attachments/assets/d9f0ce1c-2ce9-4294-a139-06a094b5fb9c" />
   - Pass **60%** (n=5)
   - 지연 **p50 2.27s / p95 3.10s**
   - 결과 파일: `metrics/agent_eval_2025-09-02_195006.csv`
 
 - **After** (System + Few-shot 보강 후):
+  - <img width="480" height="72" alt="LLM-LangCahin-Test_after_copy" src="https://github.com/user-attachments/assets/47ceca3e-3a40-45e8-8eba-520574212e74" />
   - Pass **100%** (**+40pp**)
   - 지연 **p50 2.12s (-6.6%) / p95 2.50s (-19.5%)**
   - 결과 파일: `metrics/agent_eval_2025-09-02_200913.csv`
