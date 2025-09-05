@@ -64,6 +64,7 @@ streamlit run travel_assistant_app.py
   - 지연 **p50 2.12s (-6.6%) / p95 2.50s (-19.5%)**
   - 결과 파일: `metrics/agent_eval_2025-09-02_200913.csv`
 
+> pass_ratio 60% → 100%(+40pp), p95 –19.5% (가드 프롬프트/추론 체인 수정)
 > 보강 내용: System 프롬프트에 핵심 포인트(23kg/100ml/6개월 등) 강제 + 2-shot 예시 추가  
 > 동일 조건 재측정: `gpt-3.5-turbo`, `temperature=0.0`, QA 5건
 
