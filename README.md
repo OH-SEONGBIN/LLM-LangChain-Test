@@ -1,6 +1,6 @@
 # ✈️ LangChain 기반 여행 고객센터 AI 에이전트
 
-LangChain과 GPT-3.5를 활용한 간단한 여행 고객센터 자동화 프로젝트입니다.
+LangChain과 GPT-4o mini를 활용한 간단한 여행 고객센터 자동화 프로젝트입니다.
 
 ## 📌 주요 기능
 
