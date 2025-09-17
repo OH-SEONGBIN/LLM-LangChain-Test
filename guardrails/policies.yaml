@@ -1,0 +1,8 @@
+forbidden:
+  - 욕설
+  - 불법
+  - 개인정보
+require_citation: false
+json_schema_keys:
+  - answer
+  - citations
